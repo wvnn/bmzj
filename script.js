@@ -374,14 +374,29 @@ document.addEventListener('keydown', function(e) {
 
 // 点击图片容器也能打开模态框
 document.addEventListener('DOMContentLoaded', function() {
-    const imageContainers = document.querySelectorAll('.mirror-image, .plugins-image, .about-image');
+    const imageContainers = document.querySelectorAll('.mirror-image, .plugins-image, .about-image, .plugin-image');
     imageContainers.forEach(container => {
-        container.addEventListener('click', function() {
+        container.addEventListener('click', function(e) {
+            // 如果点击的是图片本身，让图片的onclick处理
+            if (e.target.tagName === 'IMG') {
+                return;
+            }
+            
             const img = this.querySelector('img');
             if (img) {
                 openImageModal(img);
             }
         });
+    });
+    
+    // 确保所有插件图片都能点击
+    const pluginImages = document.querySelectorAll('.plugin-demo-img');
+    pluginImages.forEach(img => {
+        if (!img.onclick) {
+            img.addEventListener('click', function() {
+                openImageModal(this);
+            });
+        }
     });
 });
 
