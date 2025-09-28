@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北梦之镜 - Mirror of NorthDreamad | 专业镜像获取工具</title>
+    <meta name="description" content="北梦之镜是一款主打简约便捷免费快速获取各品牌机型的镜像分区工具，支持小米、红米、一加、真我、OPPO等品牌">
+    <link rel="icon" type="image/png" href="北梦之镜log.png">
+    <link rel="shortcut icon" type="image/png" href="北梦之镜log.png">
+    <link rel="apple-touch-icon" href="北梦之镜log.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="北梦之镜log.png" alt="北梦之镜Logo" class="logo-img">
+                <span class="logo-text">北梦之镜-Mirror of NorthDreamad</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#features" class="nav-link">功能特色</a></li>
+                <li><a href="#mirror" class="nav-link">镜像获取</a></li>
+                <li><a href="#plugins" class="nav-link">扩展插件</a></li>
+                <li><a href="#about" class="nav-link">关于我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Mirror of NorthDreamad</span>
+                </h1>
+                <p class="hero-subtitle">
+                    简约便捷免费快速获取各品牌机型的镜像分区<br>
+                    基于全网第一家镜像收集站点，根基强大收集齐全
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">24-4-14</span>
+                        <span class="stat-label">起始时间</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalUsers">0000</span>
+                        <span class="stat-label">服务用户</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">600+</span>
+                        <span class="stat-label">维护机型</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">支持品牌</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15MB</span>
+                        <span class="stat-label">轻量体积</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="http://svc.maxd.cloud:21128/%E5%8C%97%E6%A2%A6%E4%B9%8B%E9%95%9C-Mirror%20of%20NorthDreamad" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        立即下载
+                    </a>
+                    <a href="https://qm.qq.com/q/mIUCR5N00o" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-qq"></i>
+                        官方交流群
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="北梦之镜横.png" alt="北梦之镜Logo" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特色 -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">功能特色</h2>
+                <p class="section-subtitle">简约UI设计，告别视觉疲劳，便捷性设计更是行业首准</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>快速获取</h3>
+                    <p>采用更美观更适合中国宝宝体质的获取格式，获取迅速格式明确</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <h3>轻量设计</h3>
+                    <p>体积仅有15MB上下，便捷性设计更是行业首准，告别臃肿软件</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>插件扩展</h3>
+                    <p>圈内首个支持加载自定义功能插件，集成多功能便捷插件</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>全品牌支持</h3>
+                    <p>支持小米、红米、一加、真我、OPPO等主流品牌全系列机型</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>多分区支持</h3>
+                    <p>支持boot、init_boot、vendor_boot、vbmeta、dtbo等常用镜像分区</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>完全免费</h3>
+                    <p>公益性质，完全免费使用，无任何隐藏费用和广告干扰</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 镜像获取 -->
+    <section id="mirror" class="mirror-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">镜像获取</h2>
+                <p class="section-subtitle">更美观更适合中国宝宝体质的获取格式</p>
+            </div>
+            <div class="mirror-content">
+                <div class="mirror-info">
+                    <h3>镜像格式规范</h3>
+                    <div class="format-example">
+                        <code>机型代号_版本号_镜像分区名称.img</code>
+                    </div>
+                    <p>让您直观了解不再懵逼，各品牌均支持全系列镜像获取！</p>
+                    
+                    <div class="supported-partitions">
+                        <h4>支持获取的镜像分区</h4>
+                        <div class="partition-tags">
+                            <span class="tag">boot</span>
+                            <span class="tag">init_boot</span>
+                            <span class="tag">vendor_boot</span>
+                            <span class="tag">vbmeta</span>
+                            <span class="tag">dtbo</span>
+                        </div>
+                    </div>
+
+                    <div class="supported-brands">
+                        <h4>支持品牌</h4>
+                        <div class="brand-grid">
+                            <div class="brand-item">
+                                <img src="小米.png" alt="小米" class="brand-logo">
+                                <span>Xiaomi / Redmi</span>
+                            </div>
+                            <div class="brand-item">
+                                <img src="OnePlus.ico" alt="OnePlus" class="brand-logo">
+                                <span>OnePlus</span>
+                            </div>
+                            <div class="brand-item">
+                                <img src="真我.png" alt="真我" class="brand-logo">
+                                <span>Realme</span>
+                            </div>
+                            <div class="brand-item">
+                                <img src="OPPO.png" alt="OPPO" class="brand-logo">
+                                <span>OPPO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mirror-image">
+                    <img src="镜像获取展示.png" alt="镜像获取功能展示" class="mirror-demo-img clickable-image" onclick="openImageModal(this)">
+                    <div class="image-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>点击查看大图</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 扩展插件 -->
+    <section id="plugins" class="plugins-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">扩展插件</h2>
+                <p class="section-subtitle">圈内首个支持加载自定义功能插件，告别缝合工具箱</p>
+            </div>
+            <div class="plugins-content">
+                <div class="plugins-image">
+                    <img src="扩展插件页.png" alt="扩展插件页面" class="plugins-img clickable-image" onclick="openImageModal(this)">
+                    <div class="image-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>点击查看大图</span>
+                    </div>
+                </div>
+                <div class="plugins-info">
+                    <h3>我不是缝合怪！！！</h3>
+                    <p>集成了多功能便捷插件，告别缝合功能。每个插件都经过精心设计和优化，确保功能的独立性和稳定性。</p>
+                    
+                    <div class="plugin-features">
+                        <div class="plugin-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>主程序只含有镜像获取功能
+                        </div>
+                        <div class="plugin-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>支持功能插件自定义加载</span>
+                        </div>
+                        <div class="plugin-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>简约便捷操作界面</span>
+                        </div>
+                        <div class="plugin-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>多项异步优化确保稳定性</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">关于我们</h2>
+                <p class="section-subtitle">北梦星海团队出品，专注于提供优质的镜像服务</p>
+            </div>
+            <div class="about-content">
+                <div class="about-info">
+                    <h3>发展历程</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024-04-14</div>
+                            <div class="timeline-content">
+                                <h4>北梦星海资源站</h4>
+                                <p>全网第一家公益最全收集镜像站点正式上线</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2025-08-25</div>
+                            <div class="timeline-content">
+                                <h4>北梦之镜-Mirror of NorthDreamad</h4>
+                                <p>由资源站转型至软件维护，推出北梦之镜-Mirror of NorthDreamad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="北梦之镜横.png" alt="北梦之镜横版Logo" class="about-img clickable-image" onclick="openImageModal(this)">
+                    <div class="image-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <span>点击查看大图</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-info">
+                <h3>团队理念</h3>
+                <p>我们致力于为用户提供最便捷、最专业的镜像获取服务。从全网第一家镜像收集站点开始，我们始终坚持公益性质，为广大用户提供免费、高质量的服务。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="北梦之镜log.png" alt="北梦之镜Logo" class="footer-logo-img">
+                        <span>Mirror of NorthDreamad</span>
+                    </div>
+                    <p>起始于2024年4月14日帮助您快速免费获取设备的镜像分区文件</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#features">功能特色</a></li>
+                        <li><a href="#mirror">镜像获取</a></li>
+                        <li><a href="#plugins">扩展插件</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="mailto:3202693759@qq.com"><i class="fas fa-envelope"></i> 3202693759@qq.com</a></li>
+                        <li><a href="https://qm.qq.com/q/mIUCR5N00o" target="_blank"><i class="fab fa-qq"></i> QQ官方交流群</a></li>
+                        <li><i class="fab fa-qq"></i>   联系开发者: 3202693759</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="http://www.coolapk.com/u/23896650" target="_blank" class="social-link" title="酷安"><img src="酷安.png" alt="酷安" class="social-icon"></a>
+                        <a href="https://v.kuaishou.com/nNqX4vu3" target="_blank" class="social-link" title="快手"><img src="快手.png" alt="快手" class="social-icon"></a>
+                        <a href="https://b23.tv/qKAevbm" target="_blank" class="social-link" title="哔哩哔哩"><img src="哔哩哔哩.png" alt="哔哩哔哩" class="social-icon"></a>
+                        <a href="https://qm.qq.com/q/mIUCR5N00o" target="_blank" class="social-link" title="QQ群"><img src="QQ.png" alt="QQ" class="social-icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 北梦星海团队. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 图片模态框 -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeImageModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
