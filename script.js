@@ -57,7 +57,7 @@ const observer = new IntersectionObserver(function(entries) {
 
 // 观察需要动画的元素
 document.addEventListener('DOMContentLoaded', function() {
-    const animateElements = document.querySelectorAll('.feature-card, .mirror-info, .plugins-info, .about-info, .timeline-item');
+    const animateElements = document.querySelectorAll('.feature-card, .mirror-info, .plugins-info, .about-info, .timeline-item, .donate-card, .donate-payment, .payment-card, .step-item, .thank-you-message, .donate-highlight-note');
     animateElements.forEach(el => {
         observer.observe(el);
     });
@@ -100,6 +100,11 @@ const statsObserver = new IntersectionObserver(function(entries) {
                     animateCounter(stat, 5);
                     setTimeout(() => {
                         stat.textContent = '5+';
+                    }, 2000);
+                } else if (text === '2+') {
+                    animateCounter(stat, 2);
+                    setTimeout(() => {
+                        stat.textContent = '2+';
                     }, 2000);
                 } else if (text === '600+') {
                     animateCounter(stat, 600);
@@ -467,3 +472,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // 每5分钟更新一次统计数据
     setInterval(fetchStats, 5 * 60 * 1000);
 });
+
